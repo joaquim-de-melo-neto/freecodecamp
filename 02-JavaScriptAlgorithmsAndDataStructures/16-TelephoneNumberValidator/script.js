@@ -38,8 +38,8 @@ const clearOutput = () => {
 
 // event listeners
 checkBtn.addEventListener("click", update);
-userInput.addEventListener("keyup", (event) => {
-  if(event.key === " Enter") update();
+userInput.addEventListener("keydown", (event) => {
+  if(event.key === "Enter") update();
 });
 
 clearBtn.addEventListener("click", clearOutput);
